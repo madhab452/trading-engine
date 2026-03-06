@@ -37,7 +37,7 @@ impl MachingEngine {
     pub fn add_new_market(&mut self, pair: TradingPair) {
         self.orderbooks.insert(pair.clone(), Orderbook::new());
 
-        println!("adding new market to orderbook: {:?}", pair)
+        print!("adding new market to orderbook: {:?}", pair)
     }
 
     pub fn place_limit_order(
